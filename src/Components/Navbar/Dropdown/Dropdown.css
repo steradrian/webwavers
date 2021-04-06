@@ -1,0 +1,43 @@
+.dropdown {
+    background-image: url(../../../misc/Navbar.png);
+    height: fit-content;
+    width: 100vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    left: 0;
+    z-index: 999;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    padding: 20px;  
+}
+
+.dropdown__notActive {
+    display: none !important;
+    top: -100% !important;
+}
+
+.dropdown__close:hover {
+    transform:rotate(180deg) !important;
+}
+
+.dropdown__options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+}
+
+.dropdown__options > a {
+    color: white;
+    text-decoration: none !important;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.dropdown__options > a:hover {
+    border-bottom: 2px solid white;
+}

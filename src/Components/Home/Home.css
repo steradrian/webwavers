@@ -1,0 +1,245 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.MuiIconButton-root {
+  background-color: #6362a7 !important;
+  color: white !important;
+  height: 92px;
+  width: 92px;
+}
+
+.MuiIconButton-root > .MuiIconButton-label > .MuiSvgIcon-root {
+  font-size: 69px !important;
+}
+
+.MuiIconButton-root:hover {
+  background-color: #8f8ec7 !important;
+}
+
+.home__mid {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-evenly !important;
+  margin: 0 20px;
+}
+
+.home__mid > img {
+  width: 736px;
+  height: 415px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.home__infocard {
+  width: 275px;
+  height: 415px;
+  border: 6px solid #8f8ec7;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.triangle:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #8f8ec7;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  left: -40px;
+  top: 180px;
+}
+
+.triangle:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #fff;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  left: -33px;
+  top: 180px;
+}
+
+.home__infocardText {
+  padding: 15px 20px 40px 20px;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.home__infocardText > h1 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home__infocardPrice {
+  height: 150px;
+  background-color: #6362a7;
+  margin: none;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.infocard__button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.infocard__button > .MuiButton-root {
+  background: #ffce22;
+  align-items: flex-end;
+  padding: 5px 30px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+}
+
+.infocard__button > .MuiButton-root:hover {
+  background-color: #ffce22;
+  color: white;
+}
+
+.infocard__button > .MuiButton-root > span > strong {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+.home__infocardPriceText > h1 {
+  font-size: 36px;
+  font-weight: 700 !important;
+}
+
+.roll-in-blurred-left {
+  -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1)
+    both;
+  animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.roll-in-blurred-right {
+  -webkit-animation: roll-in-blurred-right 0.65s cubic-bezier(0.23, 1, 0.32, 1)
+    both;
+  animation: roll-in-blurred-right 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@media (max-width: 768px) {
+    .home {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+  .MuiIconButton-root {
+    height: 5vh;
+    width: 8vw;
+  }
+  .MuiIconButton-root > .MuiIconButton-label > .MuiSvgIcon-root {
+    font-size: 20px !important;
+  }
+  .home__mid {
+    flex-direction: column;
+  }
+  .home__mid > img {
+    width: 60vw;
+    height: 23vh;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .home__infocard {
+    width: 60vw;
+    height: 100px;
+    margin-left: 0;
+    flex-direction: row;
+  }
+  .triangle:before {
+  display: none;
+}
+
+.triangle:after {
+  display: none;
+}
+  .home__infocardPrice {
+    height: 88px;
+    width: 80px;
+    background-color: #6362a7;
+    margin: none;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .home__infocardText {
+    padding: 10px;
+    font-size: 12px;
+    overflow: hidden;
+  }
+  .home__infocardText > h1 {
+    margin-bottom: 0px;
+    font-size: 14px ;
+  }
+  .line-clamp {
+    -webkit-line-clamp: 2;
+  }
+  .home__infocardPrice {
+    height: 88px;
+    width: 30vw !important;
+    min-width: 90px;
+    background-color: #6362a7;
+    padding: 10px;
+  }
+  .infocard__button {
+      margin-left: 10px;
+      justify-content: center;
+      margin-top: 5px;
+      margin-left: 0px;
+  }
+  .infocard__button > .MuiButton-root {
+    background: #ffce22;
+    padding: 0px 10px;
+    margin-top: 0px;
+  }
+  .infocard__button > .MuiButton-root > span > strong {
+  font-size: 14px !important;
+}
+.home__infocardPriceText > h1 {
+  font-size: 14px;
+  justify-content: center;
+  text-align: center;
+}
+.home__infocardPriceText > p {
+    display: none !important;
+}
+}
+
+
+@media (max-height: 460px) {
+    .MuiIconButton-root {
+    height: 9vh;
+    width: 6vw;
+  }
+    .home__mid > img {
+    width: 60vw;
+    height: 45vh;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
